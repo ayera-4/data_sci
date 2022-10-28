@@ -9,8 +9,8 @@ class MongoRepository:
     def __init__(
         self,
         client= MongoClient(host="localhost", port=27017),
-        db= "wqu-abtest",
-        collection="ds-applicants"
+        db= database_name,
+        collection= collection_name
     ):
     
         """init
